@@ -1,0 +1,1 @@
+Penjelasan Kode sudah ada pada script program :)
