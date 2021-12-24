@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout yang digunakan untuk menampilkan gambar yang di ambil di internet dengan system grid view -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--  Bagian yang menyiapkan elemen untuk data binding  -->
+    <data>
+        <variable
+            name="photo"
+            type="id.prasetio.aji.network.Cats" />
+    </data>
+
+    <ImageView
+        android:id="@+id/cats_image"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        app:imageUrl="@{photo.img}"
+        tools:src="@tools:sample/backgrounds/scenic"
+        android:contentDescription="@string/image" />
+</layout>
